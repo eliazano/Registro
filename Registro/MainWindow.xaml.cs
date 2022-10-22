@@ -53,5 +53,12 @@ namespace Registro
                 lstVisualizza.Items.Add(a.Stampa());
             }
         }
+
+        private void btnElimina_Click(object sender, RoutedEventArgs e)
+        {
+
+            classe.RemoveAt(0);
+            lstVisualizza.Items.Clear();
+        }
     }
 }
